@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"/>
+</head>
+<body>
+<script>
+    window.onload = function () {
+        let info = document.URL+"";
+        if (info.indexOf("error")+1){
+            alert("invalid username or password")
+        }
+    }
+</script>
+<div id="loginPageWrapper" class = "container">
+    <header id="loginHeader">
+        <p>Стартовая страница, Выполнили: Павлова Е., Сивкова Ю., P3219</p>
+    </header>
+    <div style=" width: 300px " class="content">
+        <form method="POST" action="/login" class="form-signin" >
+            <h2 class="form-signin-heading" style="padding-left: 20%">Авторизация</h2>
+            <hr class="colorgraph"/><br/>
+            <input type="text" class="form-control" id="username" aria-describedby="emailHelp"
+                   placeholder="Username" name="username" required="" autofocus=""  /> <br/>
+            <input type="password" class="form-control" id="password" placeholder="Password" name="password"  required="" /> <br/>
+            <button type="submit" id="button"
+                    style="background-color: darksalmon; border-color: bisque" class="btn btn-lg btn-primary btn-block">Войти</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

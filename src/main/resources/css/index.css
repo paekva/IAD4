@@ -1,0 +1,37 @@
+.rounded {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.styled-select select {
+    border: none;
+    font-size: 14px;
+    height: 29px;
+    padding: 5px;
+    width: 268px;
+    background-color: darksalmon;
+}
+
+
+#content {
+    padding: 5px;
+    float: left;
+    width: 60%;
+}
+#table {
+    padding: 5px;
+    width: 40%;
+    float: left;
+}
+
+@media screen and (max-device-width: 496px){
+    #content {
+        padding: 5px;
+        float: left;
+        width: 95%;
+    }
+    #table {
+        padding: 5px;
+        clear: left;
+    }
+}
